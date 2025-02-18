@@ -1,0 +1,56 @@
+<!-- Practicas de iframe en html 
+Desarrollado por: Carlos Ariel Quintanilla Ramirez
+Fecha: 18/feb/2025-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		table{
+			width: 80%;
+		}
+
+		img{
+			width: 300px;
+			height: auto;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+
+
+	<!-- Tabla-->
+	<table>
+		<thead>
+			<tr>
+				<th colspan="4"><h1>Sistema solar</h1></th>
+			</tr>
+		</thead>
+		<tbody>	
+			<!-- Las imagenes que serviran de botones -->
+			<tr>
+				<td><a target="frame" href="imagenes/leon.webp"><img src="imagenes/leon.webp"></a></td>
+				<td><a target="frame" href="imagenes/Jaguar.webp"><img src="imagenes/Jaguar.webp"></a></td>
+				<td><a target="frame" href="imagenes/Gato.webp"><img src="imagenes/Gato.webp"></a></td>
+				<td><a target="frame" href="imagenes/Tigre.webp"><img src="imagenes/Tigre.webp"></a></td>
+			</tr>
+
+			<!-- El iframe vacio que mostrara las imagenes-->
+			<tr><th colspan="4"><iframe src="" name="frame" width="500px" height="300px"></iframe></th></tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
