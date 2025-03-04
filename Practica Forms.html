@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica Forms HTML</title>
+	<style>
+		table{
+			width: 100%;
+			margin: auto;
+			align-content: center;
+			background-color: white;
+		}
+
+		td{
+			margin: auto;
+			width: 40%;;
+		}
+
+		form{
+			width: 60%;
+			margin: auto;
+			background-color: white;
+		}
+
+		hgroup{
+			text-align: center;
+		}
+
+		body{
+			background-color: orange;
+		}
+
+		p{
+			background-color: white;
+			margin: auto;
+		}
+
+		h1{
+			font-size: 60px;
+			background-color: white;
+			color: rgb(255, 190, 70);
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		h2{
+			background-color: white;
+			color: rgb(167, 123, 42);
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+
+		legend{
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			color: rgb(167, 123, 42);
+		}
+
+		label{
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			color: rgb(253, 173, 0);
+		}
+
+		footer{
+			text-align: right;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			font-size: small;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>	
+	<hgroup>
+		<h1>NSQK Gira ATP</h1>
+		<h2>Venta de boletos Online</h2>
+	</hgroup>
+
+
+	<form method="post" enctype="text/plain"> 
+		<fieldset>
+			<legend>Informacion del Cliente y boletos</legend>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<label for="nombre">Nombre: </label><br>
+							<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+						</td>
+						
+						<td>
+							<label for="apellido">Apellidos: </label><br>
+							<input type="text" name="apellido" id="apellido" placeholder="Apellidos">
+						</td>
+						
+						<td>
+							<label for="username">Nombre de usuario: </label><br>
+							<input type="text" name="username" id="username" placeholder="Nombre de Usuario">	
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label for="contraseña">Password: </label><br>
+							<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+						</td>
+
+						<td>
+							<label for="fecha">Fecha de Compra: </label><br>
+							<input type="date" name="fecha" id="fecha" placeholder="fecha">
+						</td>
+
+						<td>
+							<label for="cantidad">Numero de boletos: </label><br>
+							<input type="number" name="boletos" id="boletos" placeholder="Numero de boletos">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Direccion de facturación</legend>
+			<table>
+				<tbody>
+					<tr>
+						<td>
+						<label for="pais">País</label><br>
+						<select name="pais" id="pais">
+							<option value="1">México</option>
+							<option value="2">Canada</option>
+							<option value="3">Estados Unidos</option>
+						</select>
+						</td>
+
+						<td>
+						<label for="ciudad">Ciudad</label><br>
+						<select name="ciudad" id="ciudad">
+							<option value="1">San Luis Potosí</option>
+							<option value="2">Monterrey</option>
+							<option value="3">Cd. Valles</option>
+							<option value="4">Guanajuato</option>
+							<option value="5">Guadalajara</option>
+						</select>
+						</td>
+
+						<td>
+							<label for="calle">Calle</label><br>
+							<input name="calle" type="text" id="calle" placeholder="Calle">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label for="NumCasa">Numero de Casa</label><br>
+							<input type="number" id="NumCasa" name="NumCasa" placeholder="Numero de Casa">
+						</td>
+						
+						<td>
+							<label for="Colonia">Colonia</label><br>
+							<input type="text" id="Colonia" name="Colonia" placeholder="Colonia">
+						</td>
+
+						<td>
+							<label for="email">Numero de Casa</label><br>
+							<input type="email" id="email" name="email" placeholder="Correo Electronico">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label for="RFC">R.F.C</label><br>
+							<input type="text" name="RFC" id="RFC" placeholder="RFC">
+						</td>
+
+						<td>
+							<label for="CodigoPostal">Codigó Postal</label><br>
+							<input type="text" name="CodigoPostal" id="CodigoPostal" placeholder="Codigó Postal">
+						</td>
+					</tr>
+
+					<tr>
+						<td style="text-align: center; padding: 25px;" colspan="3">
+							<input type="checkbox" name="terms" id="terms">
+							<label for="terms">Acepto Términos y Condiciones</label><br>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td style="text-align: center;" colspan="3">
+							<input type="submit" name="enviar" id="enviar" value="Comprar">
+							<input type="submit" name="borrar" id="borrar" value="Borrar Regsitro">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</fieldset>
+	</form>
+
+
+	<footer>
+		<address>Marzo 2025, SLP. Cineteca Alameda</address>
+	</footer>
+</body>
+</html>
