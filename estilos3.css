@@ -1,0 +1,54 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	background-color: lightgreen;
+	position: fixed;
+	overflow: auto;
+}
+
+li a{
+	display: block;
+	background-color: lightgreen;
+	padding: 12px;
+	text-decoration: none;
+	font-family: 'fuente1';
+}
+
+li a:hover:not(.activo){
+	background-color: green;
+	color: white;
+}
+
+li a.activo{
+	background-color: darkgreen;
+	color: white;
+}
+
+.capa1{
+ margin-left: 25%;
+ padding: 12px;
+}
+
+p{
+	text-align: justify;
+	font-family: "Jost", sans-serif;
+	font-size: 25px;
+}
+
+h2{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 30px;
+}
+
+h1{
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 36px;
+}
+
+@font-face{
+	font-family: "fuente1";
+	src: url("static/RobotoSlab-Black.ttf") format("truetype");
+}
