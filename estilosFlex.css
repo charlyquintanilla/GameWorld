@@ -1,0 +1,49 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.encabezado{
+	padding: 15px;
+	background: darkgreen;
+	color: white;
+	text-align: center;
+	font-size: 35px;
+}
+
+.contenido{
+	display: flex;
+	flex-direction: space-between;
+	flex: 1;
+	background: whitesmoke;
+}
+
+.caja{
+	border: 1px solid blue;
+	padding: 15px;
+	margin: 20px;
+	flex: 1;
+	box-shadow: 5px 5px darkblue;
+	font-size: 15px;
+	font-family: verdana;
+}
+
+.pie{
+	padding: 15px;
+	background: darkgreen;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+@media(max-width: 500px){
+	.contenido{
+		flex-direction: column;
+	}
+}
