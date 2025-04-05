@@ -1,0 +1,66 @@
+h3{
+    background-color: lightblue;
+    text-align: center;
+}
+
+h2{
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.milimetros{
+    font-size: 1mm;
+}
+
+.centi{
+    font-size: 1cm;
+}
+
+.pulgadas{
+    font-size: 1in;
+}
+
+.pixel{
+    font-size: 10px;
+}
+
+.puntos{
+    font-size: 10pt;
+}
+
+.pc{
+    font-size: 1pc;
+}
+
+.em{
+    font-size: 1em;
+}
+
+.rem{
+    font-size: 1rem;
+}
+
+.vw{
+    font-size: 1vw;
+}
+
+.vh{
+    font-size: 1vh;
+}
+
+.vmin{
+    font-size: 1vmin;
+}
+
+.vman{
+    font-size: 1vmax;
+}
+
+.ch{
+    font-size: 1ch;
+}
+
+.lh{
+    font-size: 1lh;
+}
