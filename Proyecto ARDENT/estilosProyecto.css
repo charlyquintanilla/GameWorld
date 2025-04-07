@@ -4,7 +4,7 @@
 }
 
 .subtitulo1{
-	width: 98vw;
+	width: 97vw;
 	color: white;
 	font-family: sans-serif;
 	font-size: 3em;
@@ -44,7 +44,7 @@
 	padding: 1vw;
 	margin-left: 3vw;
 	width: 50vw;
-	height: 40vh;
+	height: 63vh;
 	background-color: aquamarine;
 }
 
@@ -129,13 +129,14 @@ ul {
   	margin: 0;
   	position: fixed;
   	background-color: #004aad;
+  	z-index: 4;
 
   }
   li{
     float: right;
-    margin-right: 30px;
-    margin-top: 5px;
-    padding: 10px;
+    margin-right: 3vw;
+    margin-top: .5vw;
+    padding: 1vw;
     color: white;
     font-size: 130%;
     border-left: solid 2px black;
@@ -156,7 +157,7 @@ ul {
     background-image: url(portadadent.jpg);
     background-size: 100%;
     width: 100%;
-    height: 450px;
+    height: 35vw;
     margin: 0;
     padding: 0;
     padding-top: 5%;
@@ -165,25 +166,17 @@ ul {
 
   .nombre{
     margin: auto;
-    width: 50%;
-    height: 45%;
-    padding: auto;
+    width: 40%;
+    height: 35%;
+    padding-top: 3vw;
     background-color: #23366b;
     color:white;
     text-align: center;
-    font-size: 5em;
-    border-radius: 30px;
+    font-size: 7em;
+    border-radius: 3vw;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-  .titulo1{
-    font-size: 40px;
-    background-color: #004aad;
-    width: 100%;
-    height: 70px;
-    padding-top: 20px;
-    font-weight: bold;
-    color: white;
-  }
+  
   .contenido{
     width: 100%;
     height: 100%;
@@ -193,42 +186,119 @@ ul {
   .texto{
     width: 50%;
     height: fit-content;
-    font-size: 20px;
+    font-size: 1.5em;
     background-color: #cccfd0;
-    padding: 10px;
-    margin: 30px;
+    padding: 1vw;
+    margin: 2vw;
     margin-top: 7%;
   }
-  .img{
-    margin-left: 40px;
-    margin-top: 20px;
-  }
+  
   .titulo2{
-    font-size: 40px;
+    font-size: 4vw;
     background-color: #004aad;
     width: 50%;
-    height: 70px;
-    padding-top: 20px;
+    height: 20%;
+    padding-top: .5vw;
     font-weight: bold;
     color: white;
-    border-radius: 15px;
+    border-radius: 2vw;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 2vw;
     text-align: center;
   }
   .tratamientos{
-    width: 20px;
-    width: 70px;
-    padding-top: 20px;
-    margin: 90px;
+    width: 6vw;
+    height: 4vw;
+    padding-top: 1vw;
+    margin: 6vw;
+    margin-bottom: 15vw;
   }
   .tratamientos p{
-    width: 150px;
-    height: 50px;
-    padding-top: 10px;
+    width: 10vw;
+    height: 5vw;
+    padding-top: 1vw;
     background-color: #5ce1e6;
     text-align: center;
-    font-size: 20px;
-    margin-left: 7px;
-    border-radius: 15px;
+    font-size: 1.5em;
+    margin-left: 1vw;
+    border-radius: 1.3vw;
   }
+/*carrusel*/
+  .carousel {
+  width: 40vw;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+	padding-top: 1vw;
+  width: 40vw;
+  height: 30vw;
+  object-fit: cover;
+  z-index: -4;
+}
+
+/* Ocultar los radios */
+input[type="radio"] {
+  display: none;
+}
+
+/* Movimiento de las slides según el radio seleccionado */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+#slide5:checked ~ .slides {
+  transform: translateX(-400%);
+}
+
+
+/* Navegación estilo círculos */
+.navigation {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.navigation label {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input#slide1:checked ~ .navigation label[for="slide1"],
+input#slide2:checked ~ .navigation label[for="slide2"],
+input#slide3:checked ~ .navigation label[for="slide3"],
+input#slide4:checked ~ .navigation label[for="slide4"],
+input#slide5:checked ~ .navigation label[for="slide5"] {
+  background: #333;
+}
+/*carrusel*/
