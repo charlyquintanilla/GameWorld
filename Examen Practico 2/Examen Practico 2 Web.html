@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Examen Practico 2 Web</title>
+	<link rel="stylesheet" type="text/css" href="estilosExamenPractico.css">
+</head>
+<body>
+
+	<h1>Examen Practico Programacion 2</h1>
+	<h2>Carlos Ariel Quintanilla Ramírez 187409</h2>
+
+	<button name="ocultar" id="ocultar" onmouseover="ocultar()" onmouseout="mostrar()">Ocultar Imagenes</button>
+
+<script> 
+	function ocultar(){
+		document.getElementById("imagenes").style.visibility="hidden"
+	}
+</script>
+
+<script> 
+	function mostrar(){
+		document.getElementById("imagenes").style.visibility="visible"
+	}
+</script>
+
+
+	<div id="imagenes" class="imgcontenedor">
+		<div class="imagen">
+			<img src="imagenes/rojo.jpg">
+		</div>
+
+		<div class="imagen">
+			<img src="imagenes/azul.jpg">
+		</div>
+
+		<div class="imagen">
+			<img src="imagenes/blanco.jpg">
+		</div>
+
+		<div class="imagen">
+			<img src="imagenes/cole.jpg">
+		</div>
+		
+	</div>
+
+</body>
+</html>
