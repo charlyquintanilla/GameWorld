@@ -4,7 +4,7 @@
 }
 
 .subtitulo1{
-	width: 97vw;
+	width: 98vw;
 	color: white;
 	font-family: sans-serif;
 	font-size: 3em;
@@ -29,7 +29,6 @@
 }
 
 .mapa{
-	margin: 1vw 1vh;
 	height: 40vh;
 	width: 70vw;
 	background-color: gray;
@@ -44,7 +43,7 @@
 	padding: 1vw;
 	margin-left: 3vw;
 	width: 50vw;
-	height: 63vh;
+	height: 60vh;
 	background-color: aquamarine;
 }
 
