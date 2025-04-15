@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda - Consultorio Dental</title>
+  <link rel="stylesheet" href="ayuda.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div>
+		<section>
+		
+	
+		<ul>
+				<li class="imagen"> 
+								
+				</li>
+				<li><a href="index.html">
+					Inicio
+					</a>
+				</li>
+				<li><a href="">
+					Mi cuenta
+					</a>
+				</li>
+				<li><a href="">
+					Tratamientos
+					</a>
+				</li>
+				<li><a href="ayuda.html">
+					Ayuda
+					</a>
+				</li>
+			</ul>
+		</section>
+		</div>
+
+  <section class="ayuda">
+    <h2>¿Necesitas ayuda?</h2>
+
+    <div class="faq">
+      <h3>Preguntas Frecuentes</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">¿En que horarios tienen servicio?</button>
+        <div class="faq-answer">
+          <p>Nuestro horario de atención es de 10:00 a 2:00 y de 4:00 a 8:00 de lunes a viernes. <br> Y sábado de 11:00 a 6:00.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Qué costo tiene la consulta?</button>
+        <div class="faq-answer">
+          <p>La consulta tiene un costo base de $200</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cómo me pueden atender?</button>
+        <div class="faq-answer">
+          <p>Para ser atendido es necesario agendar una cita, para ello, puedes visitar el consultorio en horario laboral o mandar mensaje al telefono: +52 1 444 216 3695 donde se le respondera en breve y se le podra agendar una cita en algun horario disponible.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="redes-sociales">
+      <h3>Síguenos en redes</h3>
+      <div class="iconos-redes">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5214442163695" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const preguntas = document.querySelectorAll('.faq-question');
+    preguntas.forEach(pregunta => {
+      pregunta.addEventListener('click', () => {
+        const item = pregunta.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+href="https://" target="_blank">

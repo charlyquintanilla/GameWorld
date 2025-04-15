@@ -116,11 +116,13 @@ h3{
 	background-color: white;
 }
 
+
 .legal{
-	margin: 1vw;
+	margin: 0.5vw;
 }
 
 ul {
+   font-family: 'Segoe UI', sans-serif;
     list-style-type: none;
     width: 100%;
     height: auto;
@@ -133,13 +135,12 @@ ul {
   }
   li{
     float: right;
-    margin-right: 3vw;
-    margin-top: .5vw;
+    margin-right: 0vw;
+    margin-top: 0vw;
     padding: 1vw;
     color: white;
     font-size: 130%;
-    border-left: solid 2px black;
-    border-right: solid 2px black;
+    border-left: solid 2px rgb(255, 255, 255);
   }
  li.imagen{
  	float: left;
