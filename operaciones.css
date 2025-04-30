@@ -1,0 +1,41 @@
+body{
+    background-color: #7AE2CF;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+input{
+    margin: 1vw;
+}
+
+form{
+    text-align: center;
+    background-color: #077A7D;
+}
+
+h2{
+    background-color: #06202B;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2vh;
+    font-size: 1.75em;
+}
+
+p{
+    background-color: #F5EEDD;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    padding: 1vw;
+    text-align: center;
+}
