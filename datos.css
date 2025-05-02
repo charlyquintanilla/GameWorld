@@ -1,0 +1,54 @@
+body{
+    background-color: #626F47;
+}
+
+.formulario{
+    text-align: left;
+    background-color: #A4B465;
+    padding: 1vw;
+    width: 40vw;
+    position: relative;
+    left: 25vw;
+    padding-left: 10vw;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    color: #F5ECD5;
+    text-align: left;
+}
+
+label{
+    font-size: 1.1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0vh;
+}
+
+input{
+    font-size: 1.1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1vw;
+}
+
+select{
+    margin-bottom: 1vw;
+}
+
+.boton{
+    position: relative;
+    left: 60%;
+
+}
+
+.respuestas{
+    text-align: left;
+    color: #F5ECD5;
+    padding: 1vw;
+    width: 40vw;
+    position: relative;
+    left: 25vw;
+    padding-left: 10vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+}
