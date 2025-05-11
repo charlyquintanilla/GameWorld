@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Tratamientos - ARDENT</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="cotizacion.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Gill+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="cotizacion.css">
+</head>
+<body>
+  <!-- Menú idéntico al de ARDENT -->
+  <div class="menu">
+    <ul>
+      <li class="imagen">
+        <a href="index.html">ARDENT</a>
+      </li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Mi cuenta</a></li>
+      <li><a href="cotizacion.html">Registro de tratamientos</a></li>
+      <li><a href="ayuda.html">Ayuda</a></li>
+    </ul>
+  </div>
+
+  <!-- Portada estilo ARDENT -->
+  <header class="portada">
+    <div class="nombre">Registro de Tratamientos</div>
+  </header>
+
+  <!-- Contenido del formulario -->
+  <main>
+    <form id="registro-tratamientos">
+      <div class="subtitulo1">Solicita tu presupuesto</div>
+      
+      <!-- Datos personales -->
+      <div class="seccion">
+        <h2>Datos Personales</h2>
+        <div>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <!-- Selección de fecha -->
+      <div class="seccion">
+        <h2>Fecha de la cita</h2>
+        <div>
+          <label for="fecha">Seleccione fecha:</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div>
+          <label for="hora">Hora preferida:</label>
+          <input type="time" id="hora" name="hora" min="09:00" max="18:00" required>
+        </div>
+      </div>
+
+      <!-- Tratamientos -->
+      <div class="seccion">
+        <h2>Tratamientos Deseados</h2>
+        <div class="tratamiento-opcion">
+          <label>
+            <input type="checkbox" name="tratamiento" value="Limpieza dental"> 
+            Limpieza dental ($800)
+          </label>
+        </div>
+        <div class="tratamiento-opcion">
+          <label>
+            <input type="checkbox" name="tratamiento" value="Blanqueamiento"> 
+            Blanqueamiento dental ($2,500)
+          </label>
+        </div>
+        <div class="tratamiento-opcion">
+          <label>
+            <input type="checkbox" name="tratamiento" value="Ortodoncia"> 
+            Ortodoncia ($15,000)
+          </label>
+        </div>
+        <div class="tratamiento-opcion">
+          <label>
+            <input type="checkbox" name="tratamiento" value="Extracción"> 
+            Extracción dental ($1,200)
+          </label>
+        </div>
+        <div class="tratamiento-opcion">
+          <label>
+            <input type="checkbox" name="tratamiento" value="Implante"> 
+            Implante dental ($8,000)
+          </label>
+        </div>
+        <div class="tratamiento-opcion">
+          <label>
+            <input type="checkbox" name="tratamiento" value="Resina"> 
+            Resina dental ($1,500)
+          </label>
+        </div>
+      </div>
+
+      <!-- Observaciones -->
+      <div class="seccion">
+        <h2>Observaciones adicionales</h2>
+        <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+      </div>
+
+      <div class="total">
+        <h3>Total estimado: <span id="monto-total">$0</span></h3>
+      </div>
+
+      <button type="button" onclick="generarPDF()">Generar Presupuesto PDF</button>
+    </form>
+
+    <div id="grafico-tratamientos" style="width: 90%; max-width: 700px; height: 400px; margin: 3vh auto;"></div>
+    <iframe></iframe>
+  </main>
+
+  
+</body>
+</html>

@@ -1,0 +1,276 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menú idéntico al de ARDENT */
+.menu {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #004aad;
+}
+
+ul {
+    font-family: 'Segoe UI', sans-serif;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #004aad;
+}
+
+li {
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+    border-left: solid 1px rgba(255, 255, 255, 0.3);
+    display: inline-block;
+}
+
+li.imagen {
+    margin-right: auto;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Portada estilo ARDENT */
+.portada {
+    background-image: url(portadadent.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35vh;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.nombre {
+    width: 90%;
+    padding: 2rem 1rem;
+    background-color: rgba(35, 54, 107, 0.8);
+    color: white;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    border-radius: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Estilos del formulario */
+main {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+}
+
+.subtitulo1 {
+    width: 100%;
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    background-color: #004AAD;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.seccion {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.8rem;
+    border: 1px solid #e0e0e0;
+}
+
+h2 {
+    color: #004AAD;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #004AAD;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #004AAD;
+    outline: none;
+}
+
+.tratamiento-opcion {
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #eee;
+}
+
+.tratamiento-opcion label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.tratamiento-opcion input[type="checkbox"] {
+    transform: scale(1.3);
+    accent-color: #004AAD;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.total {
+    text-align: right;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #e8f4fc;
+    border-radius: 0.8rem;
+    border: 1px solid #cce0f5;
+}
+
+#monto-total {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+button {
+    background-color: #004AAD;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Gill Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #003580;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    li {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .portada {
+        height: 30vh;
+    }
+    
+    .nombre {
+        padding: 1.5rem 1rem;
+    }
+    
+    form {
+        padding: 1.5rem;
+    }
+    
+    .seccion {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+    li {
+        padding: 0.6rem 0.8rem;
+        border-left: none;
+      }
+    
+    li.imagen {
+        display: none;
+         }
+    
+    .portada {
+        height: 25vh;
+    }
+}
+iframe {
+  width: 90%;
+  max-width: 44rem;
+  height: 60vh;
+  margin: 3vh auto;
+  border: 0.125rem solid #ccc;
+  border-radius: 0.5rem;
+  background-color: white;
+}
