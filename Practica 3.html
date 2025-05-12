@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3 Parcial 3</title>
+    <script src="practica3js.js"></script>
+    <link rel="stylesheet" type="text/css" href="practica3css.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Plantas VS Zombies</h1>
+    <h2>Cuestionario Diagnostico</h2>
+    <div class="contenedor">
+    <form action="formulario" class="formulario">
+        <label for="nombre">Ingresa tu nombre completo</label><br>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="pregunta1">¿Qué necesitas para colocar plantas en el juego?</label><br>
+        <select name="pregunta1" id="pregunta1">
+            <option value="1">Soles</option>
+            <option value="0">Fertilizante</option>
+            <option value="0">Petroleo</option>
+        </select><br>
+
+        <label for="pregunta2">¿Qué planta genera soles?</label><br>
+        <select name="pregunta2" id="pregunta2">
+            <option value="1">Girasol</option>
+            <option value="0">Cactus</option>
+            <option value="0">Seta Miedosa</option>
+        </select><br>
+
+        <label for="pregunta3">¿Cómo se llama el vecino quien nos da las plantas?</label><br>
+        <select name="pregunta3" id="pregunta3">
+            <option value="0">Juancho</option>
+            <option value="0">Agustino el vecino</option>
+            <option value="1">Crazy Dave</option>
+        </select><br>
+
+        <label for="pregunta4">¿Cómo se llama el enemigo pricipal del juego?</label><br>
+        <select name="pregunta4" id="pregunta4">
+            <option value="0">Mr. Bad Zombie</option>
+            <option value="1">Dr. Zomboss</option>
+            <option value="0">Pedrito el zombi malito</option>
+        </select><br>
+
+        <label for="pregunta5">De las siguientes plantas, ¿Cúal no puede hacer daño a los zombies?</label><br>
+        <select name="pregunta5" id="pregunta5">
+            <option value="1">Nuez</option>
+            <option value="0">Papapum</option>
+            <option value="0">Guisantralladora</option>
+        </select><br>
+
+        <input type="button" name="envia" id="envia" onclick="calificar()" value="Enviar Respuestas" class="boton">
+    </form>
+        
+    
+    <div id="respuestas" class="respuestas"></div>
+    <div id="piechart" class="grafico"></div>
+
+    <iframe id="PDF" src="" class="pdf"></iframe>
+</div>
+</body>
+</html>

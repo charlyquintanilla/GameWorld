@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(97, 95, 95);
+    padding: 0;
+    margin: 0;
+}
+
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    background-color: green;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background-color: purple;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.contenedor{
+    margin: auto;
+    width: 80vw;
+    height: fit-content;
+    background-color: rgb(189, 187, 187) ;
+    padding: 1vw;
+    border-radius: 50px;
+}
+
+.formulario{
+    width: 70%;
+    margin: auto;
+}
+
+label{
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+select{
+    margin: 2vh;
+    font-size: 1.5em;
+}
+
+input{
+    margin: 2vh;
+    font-size: 1.5em;
+}
+
+.boton{
+    text-align: center;
+    position: relative;
+    left: 75%;
+    font-size: 1.25em;
+    color: white;
+    background-color: green;
+}
+.boton:hover{
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.pdf{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 70vh;
+}
+
+.grafico{
+    width: 70%;
+    margin: auto;
+    height: 70%;
+    margin-bottom: 2vw;
+}
+
+.respuestas{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    font-size: 1.50em;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 1vw;
+}
