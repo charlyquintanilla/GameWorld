@@ -270,7 +270,6 @@ iframe {
   max-width: 44rem;
   height: 60vh;
   margin: 3vh auto;
-  border: 0.125rem solid #ccc;
+  border: none;
   border-radius: 0.5rem;
-  background-color: white;
 }

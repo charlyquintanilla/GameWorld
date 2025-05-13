@@ -8,16 +8,15 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<script src="indexJS.js"></script>
 </head>
 <body>
 	<div class="menu">
 		<section>
-		
-	
 		<ul>
 		    <li class="imagen"><a href="index.html">ARDENT</a></li>
-      		<li><a href=""><span class="long-text">Inicio</span></a></li>
-		    <li><a href=""><span class="long-text">Mi cuenta</span></a></li>
+      		<li><a href="index.html"><span class="long-text">Inicio</span></a></li>
+		    <li><a href=""><span class="long-text">Tratamientos</span></a></li>
 		    <li><a href="cotizacion.html"><span class="long-text">Registro de tratamientos</span></a></li>
 		    <li><a href="ayuda.html"><span class="long-text">Ayuda</span></a></li>
 		</ul>
@@ -133,7 +132,12 @@
 	<footer class="piePagina">
 		<div class="sugerenciasCaja">
 			<div class="sugTitulo"><h3>Sugerencias y Preguntas</h3><br>Tu opinion nos importa, comparte lo que piensas: </div>
-			<div class="sugArea"></div>
+			<div class="sugArea">
+				<label for="questionInput" class="blogLabel">Escribe tu pregunta:</label><br>
+    			<input type="text" id="questionInput" class="cajaPregunta"><br>
+    			<button onclick="addQuestion()" class="botonPregunta">Publicar pregunta</button>
+				<div id="questions"></div>
+			</div>
 		</div>
 
 		
