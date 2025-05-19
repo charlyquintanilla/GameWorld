@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: lightgreen;
+}
+
+h1{
+	text-align: center;
+	font-size: 3em;
+	font-family: monospace;
+	margin: 2vw;
+	background-color: brown;
+	color: whitesmoke;
+	border-radius: 1em;
+}
+
+form{
+	width: 50vw;
+	margin: auto;
+	background-color: lightcoral;
+	padding: 2vw;
+	border-radius: 1em;
+}
+
+label{
+	font-size: 2em;
+	font-family: sans-serif;
+	padding: 1vh;
+}
+
+input{
+	margin: 1vw;
+	padding: 0.5vh;
+	font-size: 1.25em;
+	font-family: sans-serif;
+	width: 90%;
+}
+
+.boton{
+	margin: 1vw;
+	padding: 0.5vh;
+	font-size: 1.25em;
+	font-family: sans-serif;
+	width: 90%;
+}
+
+.boton:hover{
+	margin: 1vw;
+	padding: 0.5vh;
+	font-size: 1.30em;
+	font-family: sans-serif;
+	width: 90%;
+	color: white;
+	background-color: black;
+}
+
+select{
+	margin: 1vw;
+	padding: 0.5vh;
+	font-size: 1.25em;
+	font-family: sans-serif;
+	width: 90%;
+}
+
+.resultados{
+	width: 50vw;
+	margin: auto;
+	font-size: 1.75em;
+	font-family: sans-serif;
+	color: black;
+}
