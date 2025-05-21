@@ -13,16 +13,14 @@
   <link rel="stylesheet" type="text/css" href="cotizacion.css">
 </head>
 <body>
-  <!-- Menú idéntico al de ARDENT -->
+  <!-- Menú de navegación -->
   <div class="menu">
     <ul>
-      <li class="imagen">
-        <a href="index.html">ARDENT</a>
-      </li>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="#">Tratamientos</a></li>
-      <li><a href="cotizacion.html">Registro de tratamientos</a></li>
-      <li><a href="ayuda.html">Ayuda</a></li>
+      <li class="imagen"><a href="index.html">ARDENT</a></li>
+      <li><a href="index.html"><span class="long-text">Inicio</span><span class="short-text">Inicio</span></a></li>
+      <li><a href="tratamientos.html"><span class="long-text">Tratamientos</span><span class="short-text">Tratam.</span></a></li>
+      <li><a href="cotizacion.html"><span class="long-text">Registro</span><span class="short-text">Registro</span></a></li>
+      <li><a href="ayuda.html"><span class="long-text">Ayuda</span><span class="short-text">Ayuda</span></a></li>
     </ul>
   </div>
 
@@ -117,13 +115,13 @@
         <h3>Total estimado: <span id="monto-total">$0</span></h3>
       </div>
 
-      <button type="button" onclick="generarPDF()">Generar Presupuesto PDF</button>
+      <button type="button" id="generar-pdf">Generar Presupuesto PDF</button>
     </form>
 
     <div id="grafico-tratamientos" style="width: 90%; max-width: 700px; height: 400px; margin: 3vh auto;"></div>
-    <iframe></iframe>
+    <div id="pdf-container" class="pdf-viewer">
+      <iframe id="pdf-iframe"></iframe>
+    </div>
   </main>
-
-  
 </body>
 </html>

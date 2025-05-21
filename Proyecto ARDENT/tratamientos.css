@@ -1,0 +1,307 @@
+/* Estilos base */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+/* Menú de navegación */
+.menu {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #004aad;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #004aad;
+}
+
+li {
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.1rem;
+  border-left: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+li.imagen {
+  margin-right: auto;
+  border: none;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.short-text {
+  display: none;
+}
+
+/* Portada */
+.portada-tratamientos {
+  background-image: url('portadadent.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 35vh;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.nombre-tratamientos {
+  width: 90%;
+  padding: 2rem 1rem;
+  background-color: rgba(35, 54, 107, 0.8);
+  color: white;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  border-radius: 2rem;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+/* Contenido principal */
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.introduccion-tratamientos {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titulo-seccion {
+  color: #004AAD;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.texto-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Grid de tratamientos */
+.grid-tratamientos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card-tratamiento {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-tratamiento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 1.5rem rgba(0, 74, 173, 0.2);
+}
+
+.imagen-tratamiento {
+  height: 250px;
+  overflow: hidden;
+}
+
+.imagen-tratamiento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-tratamiento:hover .imagen-tratamiento img {
+  transform: scale(1.05);
+}
+
+.info-tratamiento {
+  padding: 1.5rem;
+}
+
+.info-tratamiento h3 {
+  color: #004AAD;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.descripcion-tratamiento {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.detalles-tratamiento {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.detalle-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* CTA */
+.cta-tratamientos {
+  background-color: #004AAD;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.contenido-cta {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-tratamientos h3 {
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-tratamientos p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.boton-cta {
+  display: inline-block;
+  background-color: white;
+  color: #004AAD;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-cta:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: #004AAD;
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.seccion-contacto {
+  margin-bottom: 2rem;
+}
+
+.seccion-contacto h3 {
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.derechos {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+  }
+  
+  li {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+    border-left: none;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .short-text {
+    display: inline;
+  }
+  
+  .long-text {
+    display: none;
+  }
+  
+  .grid-tratamientos {
+    grid-template-columns: 1fr;
+  }
+  
+  .imagen-tratamiento {
+    height: 200px;
+  }
+  
+  .cta-tratamientos {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .detalles-tratamiento {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .portada-tratamientos {
+    height: 30vh;
+  }
+  
+  .nombre-tratamientos {
+    padding: 1.5rem 1rem;
+  }
+}

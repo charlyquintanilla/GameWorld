@@ -3,15 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayuda - Consultorio Dental</title>
+  <title>Ayuda - ARDENT Odontología Integral</title>
   <link rel="stylesheet" href="ayuda.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Gill+Sans:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <div class="menu">
+    <ul>
+      <li class="imagen"><a href="index.html">ARDENT</a></li>
+      <li><a href="index.html"><span class="long-text">Inicio</span><span class="short-text">Inicio</span></a></li>
+      <li><a href="tratamientos.html"><span class="long-text">Tratamientos</span><span class="short-text">Tratam.</span></a></li>
+      <li><a href="cotizacion.html"><span class="long-text">Registro</span><span class="short-text">Registro</span></a></li>
+      <li><a href="ayuda.html"><span class="long-text">Ayuda</span><span class="short-text">Ayuda</span></a></li>
+    </ul>
+  </div>
+
+  <!-- Portada -->
+  <header class="portada-ayuda">
+    <div class="titulo-ayuda">Centro de Ayuda</div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenido-ayuda">
+    <section class="seccion-faq">
+      <h2 class="titulo-seccion">Preguntas Frecuentes</h2>
+      
+      <div class="contenedor-faq">
+        <!-- Pregunta 1 -->
+        <div class="item-faq">
+          <button class="pregunta-faq">
+            <span>¿En qué horarios tienen servicio?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="respuesta-faq">
+            <p>Nuestro horario de atención es de 10:00 a 14:00 y de 16:00 a 20:00 de lunes a viernes.<br>Los sábados atendemos de 11:00 a 18:00.</p>
+          </div>
+        </div>
+        
+        <!-- Pregunta 2 -->
+        <div class="item-faq">
+          <button class="pregunta-faq">
+            <span>¿Qué costo tiene la consulta?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="respuesta-faq">
+            <p>La consulta inicial tiene un costo base de $200 pesos mexicanos.</p>
+          </div>
+        </div>
+        
+        <!-- Pregunta 3 -->
+        <div class="item-faq">
+          <button class="pregunta-faq">
+            <span>¿Cómo me pueden atender?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="respuesta-faq">
+            <p>Para ser atendido es necesario agendar una cita. Puedes visitar nuestro consultorio en horario laboral o contactarnos al teléfono: <strong>+52 444 216 3695</strong> donde te atenderemos y asignaremos un horario disponible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-contacto">
+      <h2 class="titulo-seccion">Contáctanos</h2>
+      <div class="info-contacto">
+        <div class="contacto-item">
+          <i class="fas fa-phone-alt"></i>
+          <p>Teléfono: <a href="tel:+524442163695">444 216 3695</a></p>
+        </div>
+        <div class="contacto-item">
+          <i class="fas fa-envelope"></i>
+          <p>Email: <a href="mailto:armidaramirez14@gmail.com">armidaramirez14@gmail.com</a></p>
+        </div>
+        <div class="contacto-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Dirección: América del Sur #1960-A, Col. Satélite Francisco I. Madero, San Luis Potosí</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-redes">
+      <h2 class="titulo-seccion">Síguenos en redes sociales</h2>
+      <div class="contenedor-redes">
+        <a href="https://facebook.com" target="_blank" class="red-social">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="red-social">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://wa.me/5214442163695" target="_blank" class="red-social">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
   
+
   <script>
+    // Funcionalidad del FAQ
+    const preguntas = document.querySelectorAll('.pregunta-faq');
+    preguntas.forEach(pregunta => {
+      pregunta.addEventListener('click', () => {
+        const item = pregunta.parentElement;
+        item.classList.toggle('activo');
+        
+        // Cerrar otras preguntas
+        preguntas.forEach(otraPregunta => {
+          if (otraPregunta !== pregunta) {
+            otraPregunta.parentElement.classList.remove('activo');
+          }
+        });
+      });
+    });
+
+    
+    // Landbot (chat)
     window.addEventListener('mouseover', initLandbot, { once: true });
-  window.addEventListener('touchstart', initLandbot, { once: true });
-  var myLandbot;
-  function initLandbot() {
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
   if (!myLandbot) {
     var s = document.createElement('script');
     s.type = "module"
@@ -25,77 +143,6 @@
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
   }
-}
-  </script>
-</head>
-<body>
-
-  <div>
-		<div class="menu">
-      <section>
-      <ul>
-          <li class="imagen"><a href="index.html">ARDENT</a></li>
-          <li><a href="index.html"><span class="long-text">Inicio</span></a></li>
-          <li><a href=""><span class="long-text">Tratamientos</span></a></li>
-          <li><a href="cotizacion.html"><span class="long-text">Registro de tratamientos</span></a></li>
-          <li><a href="ayuda.html"><span class="long-text">Ayuda</span></a></li>
-      </ul>
-      </section>
-      </div>
-      <header class="portada">
-        <div class="nombre"></div>
-      </header>
-
-  <section class="ayuda">
-    <h2>¿Necesitas ayuda?</h2>
-
-    <div class="faq">
-      <h3>Preguntas Frecuentes</h3>
-
-      <div class="faq-item">
-        <button class="faq-question">¿En que horarios tienen servicio?</button>
-        <div class="faq-answer">
-          <p>Nuestro horario de atención es de 10:00 a 2:00 y de 4:00 a 8:00 de lunes a viernes. <br> Y sábado de 11:00 a 6:00.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">¿Qué costo tiene la consulta?</button>
-        <div class="faq-answer">
-          <p>La consulta tiene un costo base de $200</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">¿Cómo me pueden atender?</button>
-        <div class="faq-answer">
-          <p>Para ser atendido es necesario agendar una cita, para ello, puedes visitar el consultorio en horario laboral o mandar mensaje al telefono: +52 1 444 216 3695 donde se le respondera en breve y se le podra agendar una cita en algun horario disponible.</p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="redes-sociales">
-      <h3>Síguenos en redes</h3>
-      <div class="iconos-redes">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/5214442163695" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const preguntas = document.querySelectorAll('.faq-question');
-    preguntas.forEach(pregunta => {
-      pregunta.addEventListener('click', () => {
-        const item = pregunta.parentElement;
-        item.classList.toggle('active');
-      });
-    });
-  </script>
-
+}  </script>
 </body>
 </html>
-
-

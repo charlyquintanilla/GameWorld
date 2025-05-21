@@ -22,10 +22,13 @@ function calcularTotal() {
 }
 
 // Generar PDF
-window.generarPDF = async function() {
+document.getElementById('generar-pdf').addEventListener('click', async function() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
-
+  
+  // Configuración inicial
+  doc.setFont('helvetica');
+  
   // Encabezado
   doc.setFontSize(20);
   doc.setTextColor(0, 74, 173);
@@ -89,7 +92,10 @@ window.generarPDF = async function() {
     doc.setFontSize(12);
     doc.setTextColor(0, 0, 0);
     doc.text("Observaciones:", 15, y + 30);
-    doc.text(observaciones, 20, y + 40, { maxWidth: 170 });
+    
+    // Dividir el texto en líneas que quepan en el PDF
+    const splitObservaciones = doc.splitTextToSize(observaciones, 170);
+    doc.text(splitObservaciones, 20, y + 40);
   }
   
   // Pie de página
@@ -100,13 +106,29 @@ window.generarPDF = async function() {
   // Generar gráfico
   generarGraficoTratamientos(tratamientos);
   
-  // Mostrar PDF
-  const pdfString = doc.output('datauristring');
-  document.querySelector('iframe').setAttribute('src', pdfString);
-};
+  // Mostrar PDF en el iframe
+  const pdfBlob = doc.output('blob');
+  const pdfUrl = URL.createObjectURL(pdfBlob);
+  const pdfIframe = document.getElementById('pdf-iframe');
+  
+  pdfIframe.src = pdfUrl;
+  
+  // Mostrar el contenedor del PDF
+  document.getElementById('pdf-container').style.display = 'block';
+  
+  // Opción para descargar directamente
+  // doc.save('Presupuesto_ARDENT.pdf');
+});
 
 // Generar gráfico de tratamientos seleccionados
 function generarGraficoTratamientos(tratamientos) {
+  if (tratamientos.length === 0) {
+    document.getElementById('grafico-tratamientos').style.display = 'none';
+    return;
+  }
+  
+  document.getElementById('grafico-tratamientos').style.display = 'block';
+  
   google.charts.load('current', { packages: ['corechart'] });
   google.charts.setOnLoadCallback(drawChart);
 
@@ -124,14 +146,30 @@ function generarGraficoTratamientos(tratamientos) {
       title: 'Distribución de Costos por Tratamiento',
       pieHole: 0.4,
       colors: ['#004AAD', '#3885BB', '#5ce1e6', '#2ecc71', '#27ae60'],
-      chartArea: { width: '90%', height: '80%' }
+      chartArea: { 
+        width: '90%', 
+        height: '80%',
+        left: '5%',
+        top: '15%'
+      },
+      fontSize: 12,
+      titleTextStyle: {
+        fontSize: 16
+      }
     };
 
     const chart = new google.visualization.PieChart(document.getElementById('grafico-tratamientos'));
+    
+    // Redibujar el gráfico cuando cambie el tamaño de la ventana
+    window.addEventListener('resize', function() {
+      chart.draw(data, options);
+    });
+    
     chart.draw(data, options);
   }
 }
 
+// Inicializar Landbot (chat)
 window.addEventListener('mouseover', initLandbot, { once: true });
 window.addEventListener('touchstart', initLandbot, { once: true });
 var myLandbot;

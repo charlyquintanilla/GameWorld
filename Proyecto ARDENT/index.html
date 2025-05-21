@@ -11,137 +11,133 @@
 	<script src="indexJS.js"></script>
 </head>
 <body>
-	<div class="menu">
-		<section>
-		<ul>
-		    <li class="imagen"><a href="index.html">ARDENT</a></li>
-      		<li><a href="index.html"><span class="long-text">Inicio</span></a></li>
-		    <li><a href=""><span class="long-text">Tratamientos</span></a></li>
-		    <li><a href="cotizacion.html"><span class="long-text">Registro de tratamientos</span></a></li>
-		    <li><a href="ayuda.html"><span class="long-text">Ayuda</span></a></li>
-		</ul>
-		</section>
-		</div>
-		<header class="portada">
-			<div class="nombre">ARDENT</div>
-		</header>
+	<!-- Menú de navegación -->
+  <div class="menu">
+    <ul>
+      <li class="imagen"><a href="index.html">ARDENT</a></li>
+      <li><a href="index.html"><span class="long-text">Inicio</span><span class="short-text">Inicio</span></a></li>
+      <li><a href="tratamientos.html"><span class="long-text">Tratamientos</span><span class="short-text">Tratam.</span></a></li>
+      <li><a href="cotizacion.html"><span class="long-text">Registro</span><span class="short-text">Registro</span></a></li>
+      <li><a href="ayuda.html"><span class="long-text">Ayuda</span><span class="short-text">Ayuda</span></a></li>
+    </ul>
+  </div>
 	
-		<div class="subtitulo1"
-		>¿Quienes somos?</div>
-	
-		<div class="contenido">
-			<div class="texto">
-				Somos una clinica dental, especializada en la ortodoncia que busca ayudar a que todos sus pacientes
-				sonrian con completa confianza, regresando les su salud y estetica bucal que podemos perder con el tiempo,
-				o tratando problemas a temprana edad para prevenir su desarrollo. Para todas las edades, y para todos los objetivos, 
-				contamos con 2 increibles doctores de planta y multiples especialistas que pueden ayudarte a recuperar la confianza
-				de sonreir abiertamente. Tenemos costos muy accesibles pues la salud debe estar siempre al alcance de todos, no solo 
-				de los mas privilegiados.
-			</div>
-	
-			<div class="carousel">
-				<!-- Botones de radio ocultos -->
-				<input type="radio" name="slides" id="slide1" checked>
-				<input type="radio" name="slides" id="slide2">
-				<input type="radio" name="slides" id="slide3">
-				<input type="radio" name="slides" id="slide4">
-				<input type="radio" name="slides" id="slide5">
-  
-				<!-- Imágenes -->
-				<div class="slides">
-				  <div class="slide s1">
-					<img src="imagendent.jpg" alt="Imagen 1">
-				  </div>
-				  <div class="slide">
-					<img src="dent2.jfif" alt="Imagen 2">
-				  </div>
-				  <div class="slide">
-					<img src="dent3.jfif" alt="Imagen 3">
-				  </div>
-				  <div class="slide">
-					<img src="dent4.jfif" alt="Imagen 4">
-				  </div>
-				  <div class="slide">
-					<img src="dent5.jfif" alt="Imagen 5">
-				  </div>
+	<header class="portada">
+		<div class="nombre">ARDENT</div>
+	</header>
+
+	<div class="main-content">
+		<div class="about-section">
+			<div class="subtitulo1">¿Quienes somos?</div>
+			<div class="about-content">
+				<div class="texto">
+					Somos una clinica dental, especializada en la ortodoncia que busca ayudar a que todos sus pacientes
+					sonrian con completa confianza, regresando les su salud y estetica bucal que podemos perder con el tiempo,
+					o tratando problemas a temprana edad para prevenir su desarrollo. Para todas las edades, y para todos los objetivos, 
+					contamos con 2 increibles doctores de planta y multiples especialistas que pueden ayudarte a recuperar la confianza
+					de sonreir abiertamente. Tenemos costos muy accesibles pues la salud debe estar siempre al alcance de todos, no solo 
+					de los mas privilegiados.
 				</div>
-  
-				<!-- Navegación -->
-				<div class="navigation">
-				  <label for="slide1"></label>
-				  <label for="slide2"></label>
-				  <label for="slide3"></label>
-				  <label for="slide4"></label>
-				  <label for="slide5"></label>
+				<div class="carousel">
+					<input type="radio" name="slides" id="slide1" checked>
+					<input type="radio" name="slides" id="slide2">
+					<input type="radio" name="slides" id="slide3">
+					<input type="radio" name="slides" id="slide4">
+					<input type="radio" name="slides" id="slide5">
+					<div class="slides">
+					  <div class="slide s1">
+						<img src="imagendent.jpg" alt="Imagen 1">
+					  </div>
+					  <div class="slide">
+						<img src="dent2.jfif" alt="Imagen 2">
+					  </div>
+					  <div class="slide">
+						<img src="dent3.jfif" alt="Imagen 3">
+					  </div>
+					  <div class="slide">
+						<img src="dent4.jfif" alt="Imagen 4">
+					  </div>
+					  <div class="slide">
+						<img src="dent5.jfif" alt="Imagen 5">
+					  </div>
+					</div>
+					<div class="navigation">
+					  <label for="slide1"></label>
+					  <label for="slide2"></label>
+					  <label for="slide3"></label>
+					  <label for="slide4"></label>
+					  <label for="slide5"></label>
+					</div>
 				</div>
-			  </div>
-  
-		  </div>
-	
-		<div class="titulo2">Tratamientos</div>
-		<div class="contenido2">
-			<div class="tratamientos">
-				<img src="maxi.jpg" >
-				<p>Cirujia macilofacial</p>
-			</div>
-			<div class="tratamientos">
-				<img src="endo.jpg" >
-							<p>Endodoncia</p>
-			</div>
-			<div class="tratamientos">
-				<img src="orto.jpg" >
-				<p>Ortodoncia</p>
-			</div>
-			<div class="tratamientos">
-				<img src="pedi.jpg" >
-				<p>Pediatria</p>
-			</div>
-			<div class="tratamientos">
-				<img src="perio.jpg" >
-				<p>Periodoncia</p>
 			</div>
 		</div>
 
-	<div class="subtitulo1">Contactanos</div>
+		<div class="treatments-section">
+			<div class="titulo2">Tratamientos</div>
+			<div class="treatments-grid">
+				<div class="treatment-card">
+					<img src="maxi.jpg" alt="Cirugía maxilofacial">
+					<p>Cirugía maxilofacial</p>
+				</div>
+				<div class="treatment-card">
+					<img src="endo.jpg" alt="Endodoncia">
+					<p>Endodoncia</p>
+				</div>
+				<div class="treatment-card">
+					<img src="orto.jpg" alt="Ortodoncia">
+					<p>Ortodoncia</p>
+				</div>
+				<div class="treatment-card">
+					<img src="pedi.jpg" alt="Pediatría">
+					<p>Pediatría</p>
+				</div>
+				<div class="treatment-card">
+					<img src="perio.jpg" alt="Periodoncia">
+					<p>Periodoncia</p>
+				</div>
+			</div>
+		</div>
 
+		<div class="contact-section">
+			<div class="subtitulo1">Contactanos</div>
+			<div class="contact-content">
+				<div class="map-container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.9181852548773!2d-100.95510551311821!3d22.111782204365216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa25e8ec3a9eb%3A0xeb5802f8ede7e7b2!2sAm%C3%A9rica%20del%20Sur%201960a%2C%20Satelite%20Francisco%20I.%20Madero%202%2C%2078380%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1743996590986!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="contact-info">
+					<h3>Información de contacto</h3>
+					<p>Dirección: America del Sur #1960-A Col. Satelite Francisco I. Madero, SLP, San Luis Potosi, 78380.</p>
+					<p>Tel: +52 444 216 3695</p>
+					<p>Correo: armidaramirez14@gmail.com</p>
+				</div>
+			</div>
+		</div>
 
-
-	<div class="direccionCaja">
-		<map><div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.9181852548773!2d-100.95510551311821!3d22.111782204365216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa25e8ec3a9eb%3A0xeb5802f8ede7e7b2!2sAm%C3%A9rica%20del%20Sur%201960a%2C%20Satelite%20Francisco%20I.%20Madero%202%2C%2078380%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1743996590986!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></map>
-		<div class="infoContacto">Dirección: America del Sur #1960-A Col. Satelite Francisco I. Madero, SLP, San Luis Potosi, 78380.
-		<br><br>
-		Tel: +52 444 216 3695
-		<br><br>
-		Correo: <br>armidaramirez14@gmail.com
+		<div class="work-section">
+			<div class="video-container">
+				<video src="Video.mp4" width="100%" height="100%" autoplay controls></video>
+			</div>
+			<div class="work-info">
+				<h3>NUESTRO TRABAJO</h3>
+				<p>Con la presencia de la Dra. Armida Ramirez Acosta y el Dr. Oscar, y multiples especialistas, llevamos ofreciendo el mejor servicio posible por más de 10 años, 
+					en ARDENT: Odontologia Integral estamos cosntantemente mejorando nuestros servicios con el objetivo de darle el mejor servicio
+					y obtenga la sonrisa y salud bucal que se merece. <br> ¡¡Agende su cita y consiga su sonrisa soñada!!</p>
+			</div>
 		</div>
 	</div>
-
-	<div class="infoNegocio">
-		<div class="video"><video src="Video.mp4" width="100%" height="100%" autoplay controls></video></div>
-		<div class="nuestroTrabajo">
-			<div class="negTitulo"><h3>NUESTRO TRABAJO</h3></div>
-			<div class="negText">Con la presencia de la Dra. Armida Ramirez Acosta y el Dr. Oscar, y multiples especialistas, llevamos ofreciendo el mejor servicio posible por más de 10 años, 
-				en ARDENT: Odontologia Integral estamos cosntantemente mejorando nuestros servicios con el objetivo de darle el mejor servicio
-				y obtenga la sonrisa y salud bucal que se merece. <br> ¡¡Agende su cita y consiga su sonrisa soñada!!
-			</div>
-		</div>
-	</div>
-
-
 
 	<footer class="piePagina">
 		<div class="sugerenciasCaja">
 			<div class="sugTitulo"><h3>Sugerencias y Preguntas</h3><br>Tu opinion nos importa, comparte lo que piensas: </div>
 			<div class="sugArea">
 				<label for="questionInput" class="blogLabel">Escribe tu pregunta:</label><br>
-    			<input type="text" id="questionInput" class="cajaPregunta"><br>
-    			<button onclick="addQuestion()" class="botonPregunta">Publicar pregunta</button>
+				<input type="text" id="questionInput" class="cajaPregunta"><br>
+				<button onclick="addQuestion()" class="botonPregunta">Publicar pregunta</button>
 				<div id="questions"></div>
 			</div>
 		</div>
-
-		
 		<div class="legal"><br>Pagina web desarrollada para la materia de Programación Web I 
-			Primavera 2025. Universidad Politécnica de San Luis Potosí</div></footer>
+			Primavera 2025. Universidad Politécnica de San Luis Potosí</div>
+	</footer>
 </body>
 </html>
