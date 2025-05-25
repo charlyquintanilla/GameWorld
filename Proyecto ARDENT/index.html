@@ -1,143 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ARDENT</title>
-	<link rel="stylesheet" type="text/css" href="estilosProyecto.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-	<script src="indexJS.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clínica dental ARDENT en San Luis Potosí. Especialistas en ortodoncia, endodoncia y periodoncia. Tratamientos dentales profesionales para toda la familia.">
+  <meta name="keywords" content="clínica dental, ortodoncia, endodoncia, dentista San Luis Potosí, ARDENT, salud bucal, odontología">
+  <meta name="author" content="ARDENT Clínica Dental">
+    <!-- Favicon básico -->
+  <link rel="icon" href="favicon.jfif" type="image/x-icon">
+  
+  <!-- Favicon para dispositivos Apple (opcional) -->
+  <link rel="apple-touch-icon" href="favicon.jfif">
+  <title>Clínica Dental ARDENT</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ardentdental.com/">
+  <meta property="og:title" content="Clínica Dental ARDENT | Ortodoncia y Especialistas en San Luis Potosí">
+  <meta property="og:description" content="Especialistas en ortodoncia, endodoncia y periodoncia en San Luis Potosí. Tratamientos dentales profesionales para toda la familia.">
+  <meta property="og:image" content="https://www.ardentdental.com/imagendent.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.ardentdental.com/">
+  <meta property="twitter:title" content="Clínica Dental ARDENT | Ortodoncia y Especialistas en San Luis Potosí">
+  <meta property="twitter:description" content="Especialistas en ortodoncia, endodoncia y periodoncia en San Luis Potosí. Tratamientos dentales profesionales para toda la familia.">
+  <meta property="twitter:image" content="https://www.ardentdental.com/imagendent.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.ardentdental.com/" />
+
+  <link rel="stylesheet" href="estilosProyecto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="indexJS.js" defer></script>
+
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "ARDENT Clínica Dental",
+    "image": "https://www.ardentdental.com/imagendent.jpg",
+    "@id": "https://www.ardentdental.com/",
+    "url": "https://www.ardentdental.com/",
+    "telephone": "+52 444 216 3695",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "América del Sur #1960-A",
+      "addressLocality": "San Luis Potosí",
+      "addressRegion": "SLP",
+      "postalCode": "78380",
+      "addressCountry": "MX"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "22.1497",
+      "longitude": "-100.9761"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
 </head>
 <body>
-	<!-- Menú de navegación -->
-  <div class="menu">
+  <nav class="menu" aria-label="Menú principal">
     <ul>
       <li class="imagen"><a href="index.html">ARDENT</a></li>
-      <li><a href="index.html"><span class="long-text">Inicio</span><span class="short-text">Inicio</span></a></li>
-      <li><a href="tratamientos.html"><span class="long-text">Tratamientos</span><span class="short-text">Tratam.</span></a></li>
-      <li><a href="cotizacion.html"><span class="long-text">Registro</span><span class="short-text">Registro</span></a></li>
-      <li><a href="ayuda.html"><span class="long-text">Ayuda</span><span class="short-text">Ayuda</span></a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tratamientos.html">Tratamientos</a></li>
+      <li><a href="cotizacion.html">Registro</a></li>
+      <li><a href="ayuda.html">Ayuda</a></li>
     </ul>
+  </nav>
+
+  <header class="portada" role="banner">
+    <h1 class="nombre">ARDENT | Ortodoncia y Especialistas</h1>
+  </header>
+
+  <main class="main-content">
+    <section class="about-section" id="quienes-somos">
+      <h2 class="subtitulo1">¿Quiénes somos?</h2>
+      <div class="about-content">
+        <div class="texto">
+          <p>Somos ARDENT, una clínica dental especializada en ortodoncia, comprometida en devolver la confianza de sonreír. Con tratamientos para todas las edades, ofrecemos atención de calidad y accesible, gracias a nuestros doctores de planta y especialistas capacitados.</p>
+          <p>Conoce más sobre nuestros <a href="tratamientos.html" aria-label="Ver todos nuestros tratamientos dentales">tratamientos dentales</a> o <a href="#contacto" aria-label="Contactar a ARDENT clínica dental">contáctanos</a> para agendar una cita.</p>
+        </div>
+        <div class="carousel" aria-label="Carrusel de imágenes">
+          <input type="radio" name="slides" id="slide1" checked>
+          <input type="radio" name="slides" id="slide2">
+          <input type="radio" name="slides" id="slide3">
+          <input type="radio" name="slides" id="slide4">
+          <input type="radio" name="slides" id="slide5">
+          <div class="slides">
+            <div class="slide"><img src="imagendent.jpg" alt="Clínica dental ARDENT - Consultorio moderno y equipado"></div>
+            <div class="slide"><img src="dent2.jfif" alt="Consultorio dental moderno en ARDENT"></div>
+            <div class="slide"><img src="dent3.jfif" alt="Equipo odontológico profesional en ARDENT"></div>
+            <div class="slide"><img src="dent4.jfif" alt="Pacientes satisfechos con sus tratamientos en ARDENT"></div>
+            <div class="slide"><img src="dent5.jfif" alt="Especialistas dentales trabajando en ARDENT"></div>
+          </div>
+          <div class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="treatments-section" id="tratamientos">
+      <h2 class="titulo2">Nuestros Tratamientos Dentales</h2>
+      <div class="treatments-grid">
+        <article class="treatment-card">
+          <img src="maxi.jpg" alt="Cirugía maxilofacial en ARDENT">
+          <h3>Cirugía maxilofacial</h3>
+          <p>Soluciones quirúrgicas para problemas faciales y mandibulares.</p>
+          <a href="tratamientos.html#maxilofacial" aria-label="Más información sobre cirugía maxilofacial">Más info</a>
+        </article>
+        <article class="treatment-card">
+          <img src="endo.jpg" alt="Endodoncia en ARDENT">
+          <h3>Endodoncia</h3>
+          <p>Tratamiento de conductos para salvar tus dientes naturales.</p>
+          <a href="tratamientos.html#endodoncia" aria-label="Más información sobre endodoncia">Más info</a>
+        </article>
+        <article class="treatment-card">
+          <img src="orto.jpg" alt="Ortodoncia en ARDENT">
+          <h3>Ortodoncia</h3>
+          <p>Corrección de la posición dental para una sonrisa perfecta.</p>
+          <a href="tratamientos.html#ortodoncia" aria-label="Más información sobre ortodoncia">Más info</a>
+        </article>
+        <article class="treatment-card">
+          <img src="pedi.jpg" alt="Odontopediatría en ARDENT">
+          <h3>Pediatría</h3>
+          <p>Cuidado dental especializado para los más pequeños.</p>
+          <a href="tratamientos.html#pediatria" aria-label="Más información sobre odontopediatría">Más info</a>
+        </article>
+        <article class="treatment-card">
+          <img src="perio.jpg" alt="Periodoncia en ARDENT">
+          <h3>Periodoncia</h3>
+          <p>Tratamiento de encías para una salud bucal completa.</p>
+          <a href="tratamientos.html#periodoncia" aria-label="Más información sobre periodoncia">Más info</a>
+        </article>
+      </div>
+      <div class="more-treatments">
+        <p>Descubre todos nuestros <a href="tratamientos.html" style="color: grey;" aria-label="Ver todos los tratamientos disponibles">servicios dentales</a> y encuentra el adecuado para ti.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+  <h2 class="subtitulo1">Contáctanos</h2>
+  <div class="contact-content">
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.237316496507!2d-100.9783319241647!3d22.14971307986417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1e8a10a5a5f%3A0x1c3e2967b1c1b4d5!2sAm%C3%A9rica%20del%20Sur%201960-A%2C%20Sat%C3%A9lite%2C%2078380%20San%20Luis%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1620000000000!5m2!1ses-419!2smx" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        title="Ubicación de ARDENT Clínica Dental en San Luis Potosí">
+      </iframe>
+    </div>
+    <address class="contact-info">
+      <h3>Información de contacto</h3>
+      <p><strong>Dirección:</strong> América del Sur #1960-A, Col. Satélite Francisco I. Madero, SLP, C.P. 78380</p>
+      <p><strong>Teléfono:</strong> <a href="tel:+524442163695">+52 444 216 3695</a></p>
+      <p><strong>Correo electrónico:</strong> <a href="mailto:contacto@ardentdental.com">contacto@ardentdental.com</a></p>
+      <p><strong>Horario:</strong> Lunes a Sábado de 9:00 am a 6:00 pm</p>
+    </address>
   </div>
-	
-	<header class="portada">
-		<div class="nombre">ARDENT</div>
-	</header>
+</section>
 
-	<div class="main-content">
-		<div class="about-section">
-			<div class="subtitulo1">¿Quienes somos?</div>
-			<div class="about-content">
-				<div class="texto">
-					Somos una clinica dental, especializada en la ortodoncia que busca ayudar a que todos sus pacientes
-					sonrian con completa confianza, regresando les su salud y estetica bucal que podemos perder con el tiempo,
-					o tratando problemas a temprana edad para prevenir su desarrollo. Para todas las edades, y para todos los objetivos, 
-					contamos con 2 increibles doctores de planta y multiples especialistas que pueden ayudarte a recuperar la confianza
-					de sonreir abiertamente. Tenemos costos muy accesibles pues la salud debe estar siempre al alcance de todos, no solo 
-					de los mas privilegiados.
-				</div>
-				<div class="carousel">
-					<input type="radio" name="slides" id="slide1" checked>
-					<input type="radio" name="slides" id="slide2">
-					<input type="radio" name="slides" id="slide3">
-					<input type="radio" name="slides" id="slide4">
-					<input type="radio" name="slides" id="slide5">
-					<div class="slides">
-					  <div class="slide s1">
-						<img src="imagendent.jpg" alt="Imagen 1">
-					  </div>
-					  <div class="slide">
-						<img src="dent2.jfif" alt="Imagen 2">
-					  </div>
-					  <div class="slide">
-						<img src="dent3.jfif" alt="Imagen 3">
-					  </div>
-					  <div class="slide">
-						<img src="dent4.jfif" alt="Imagen 4">
-					  </div>
-					  <div class="slide">
-						<img src="dent5.jfif" alt="Imagen 5">
-					  </div>
-					</div>
-					<div class="navigation">
-					  <label for="slide1"></label>
-					  <label for="slide2"></label>
-					  <label for="slide3"></label>
-					  <label for="slide4"></label>
-					  <label for="slide5"></label>
-					</div>
-				</div>
-			</div>
-		</div>
+    <section class="work-section" id="nuestro-trabajo">
+      <div class="video-container">
+        <video src="Video.mp4" width="100%" height="100%" autoplay muted controls aria-label="Video sobre nuestros servicios dentales"></video>
+      </div>
+      <div class="work-info">
+        <h3>Nuestro Trabajo</h3>
+        <p>Con más de 10 años de experiencia, en ARDENT: Odontología Integral ofrecemos atención profesional con la Dra. Armida Ramírez Acosta y el Dr. Oscar. ¡Recupere su salud y confianza al sonreír!</p>
+        <p>Conoce más sobre <a href="tratamientos.html" aria-label="Nuestros tratamientos dentales">nuestros servicios</a> o <a href="cotizacion.html" aria-label="Solicitar una cotización">solicita una cotización</a> sin compromiso.</p>
+      </div>
+    </section>
+  </main>
 
-		<div class="treatments-section">
-			<div class="titulo2">Tratamientos</div>
-			<div class="treatments-grid">
-				<div class="treatment-card">
-					<img src="maxi.jpg" alt="Cirugía maxilofacial">
-					<p>Cirugía maxilofacial</p>
-				</div>
-				<div class="treatment-card">
-					<img src="endo.jpg" alt="Endodoncia">
-					<p>Endodoncia</p>
-				</div>
-				<div class="treatment-card">
-					<img src="orto.jpg" alt="Ortodoncia">
-					<p>Ortodoncia</p>
-				</div>
-				<div class="treatment-card">
-					<img src="pedi.jpg" alt="Pediatría">
-					<p>Pediatría</p>
-				</div>
-				<div class="treatment-card">
-					<img src="perio.jpg" alt="Periodoncia">
-					<p>Periodoncia</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="contact-section">
-			<div class="subtitulo1">Contactanos</div>
-			<div class="contact-content">
-				<div class="map-container">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.9181852548773!2d-100.95510551311821!3d22.111782204365216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa25e8ec3a9eb%3A0xeb5802f8ede7e7b2!2sAm%C3%A9rica%20del%20Sur%201960a%2C%20Satelite%20Francisco%20I.%20Madero%202%2C%2078380%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1743996590986!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="contact-info">
-					<h3>Información de contacto</h3>
-					<p>Dirección: America del Sur #1960-A Col. Satelite Francisco I. Madero, SLP, San Luis Potosi, 78380.</p>
-					<p>Tel: +52 444 216 3695</p>
-					<p>Correo: armidaramirez14@gmail.com</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="work-section">
-			<div class="video-container">
-				<video src="Video.mp4" width="100%" height="100%" autoplay controls></video>
-			</div>
-			<div class="work-info">
-				<h3>NUESTRO TRABAJO</h3>
-				<p>Con la presencia de la Dra. Armida Ramirez Acosta y el Dr. Oscar, y multiples especialistas, llevamos ofreciendo el mejor servicio posible por más de 10 años, 
-					en ARDENT: Odontologia Integral estamos cosntantemente mejorando nuestros servicios con el objetivo de darle el mejor servicio
-					y obtenga la sonrisa y salud bucal que se merece. <br> ¡¡Agende su cita y consiga su sonrisa soñada!!</p>
-			</div>
-		</div>
-	</div>
-
-	<footer class="piePagina">
-		<div class="sugerenciasCaja">
-			<div class="sugTitulo"><h3>Sugerencias y Preguntas</h3><br>Tu opinion nos importa, comparte lo que piensas: </div>
-			<div class="sugArea">
-				<label for="questionInput" class="blogLabel">Escribe tu pregunta:</label><br>
-				<input type="text" id="questionInput" class="cajaPregunta"><br>
-				<button onclick="addQuestion()" class="botonPregunta">Publicar pregunta</button>
-				<div id="questions"></div>
-			</div>
-		</div>
-		<div class="legal"><br>Pagina web desarrollada para la materia de Programación Web I 
-			Primavera 2025. Universidad Politécnica de San Luis Potosí</div>
-	</footer>
+  <footer class="piePagina">
+    <section class="sugerenciasCaja" aria-labelledby="sugerencias">
+      <h2 id="sugerencias" class="sugTitulo">Sugerencias y Preguntas</h2>
+      <p>Tu opinión nos importa. Comparte lo que piensas:</p>
+      <form class="sugArea" onsubmit="addQuestion(); return false;">
+        <label for="questionInput" class="blogLabel">Escribe tu pregunta:</label>
+        <input type="text" id="questionInput" class="cajaPregunta" aria-required="true">
+        <button type="submit" class="botonPregunta">Publicar pregunta</button>
+        <div id="questions"></div>
+      </form>
+      
+    </section>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a> | 
+      <a href="tratamientos.html">Tratamientos</a> | 
+      <a href="cotizacion.html">Cotización</a> | 
+      <a href="ayuda.html">Ayuda</a> | 
+      <a href="#contacto">Contacto</a>
+    </div>
+    <p class="legal">Página web desarrollada para la materia de Programación Web I, Primavera 2025. Universidad Politécnica de San Luis Potosí.</p>
+  </footer>
 </body>
 </html>
